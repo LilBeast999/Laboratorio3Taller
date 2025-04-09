@@ -29,10 +29,12 @@ export class AppComponent {
     this.http.post(this.apiUrl, formData).subscribe(
       (response: any) => {
         console.log('Registro insertado:', response);
-        // Aquí puedes agregar lógica adicional, como limpiar el formulario o mostrar una notificación.
+        alert("formulario enviado con exito")
       },
       (error: any) => {
         console.error('Error al insertar:', error);
+        alert("no se pudo enviar el formulario")
+
       }
     );
   }
