@@ -71,4 +71,22 @@
   <div class="form-section">
     <button class="submit-button" (click)="onSolicitar()">Solicitar</button>
   </div>
+
+  <!-- Botón para obtener registros -->
+  <button (click)="onGetRecords()">Mostrar Registros</button>
+
+  <!-- Sección para mostrar los registros -->
+  <div *ngIf="records.length > 0">
+    <h2>Registros en la Base de Datos</h2>
+    <ul>
+      <li *ngFor="let record of records">
+        <strong>Nombre:</strong> {{ record.nombre }} |
+        <strong>Matrícula:</strong> {{ record.matricula }} |
+        <strong>Hora:</strong> {{ record.hora }} |
+        <strong>Fecha:</strong> {{ record.fecha }}
+      </li>
+    </ul>
+  </div>
 </main>
+
+
