@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #222;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,7 @@ body {
   color: #9b1c2e;
 }
 
+/* Main Content */
 .main-content {
   padding: 2rem;
 }
@@ -60,6 +63,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Card y Calendario */
 .card {
   display: flex;
   align-items: flex-start;
@@ -118,18 +122,31 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.form-section {
+/* Formulario de inputs */
+.form-inputs {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
+  margin-top: 2rem;
 }
 
-.dropdown {
+.form-inputs label {
+  font-weight: 600;
+}
+
+.input-field {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
+  width: 100%;
   font-size: 1rem;
+}
+
+/* Botón */
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .submit-button {

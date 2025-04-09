@@ -47,16 +47,28 @@
         </ul>
       </div>
     </div>
+  </div>
 
-    <!-- Selección y botón -->
-    <div class="form-section">
-      <select class="dropdown">
-        <option selected disabled>Actividad</option>
-        <option>Revisión de laboratorio</option>
-        <option>Consulta técnica</option>
-      </select>
+  <h2>Reservar Hora de laboratorio</h2>
 
-      <button class="submit-button">Solicitar</button>
-    </div>
+  <div class="form-inputs">
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" type="text" class="input-field" placeholder="Ingresa tu nombre completo" [(ngModel)]="nombre"/>
+
+    <label for="matricula">Matrícula</label>
+    <input id="matricula" type="text" class="input-field" placeholder="Ingresa tu matrícula" [(ngModel)]="matricula"/>
+
+    <label for="hora">Hora</label>
+    <input id="hora" type="time" class="input-field" [(ngModel)]="hora"/>
+
+    <label for="fecha">Fecha</label>
+    <input id="fecha" type="date" class="input-field" [(ngModel)]="fecha"/>
+  </div>
+
+  <div style="margin: 30px"></div>
+
+  <!-- Botón para enviar -->
+  <div class="form-section">
+    <button class="submit-button" (click)="onSolicitar()">Solicitar</button>
   </div>
 </main>
