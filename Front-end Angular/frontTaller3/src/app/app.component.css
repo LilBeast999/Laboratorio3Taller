@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+.header-text .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.separator {
+  color: #888;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: #9b1c2e;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.calendar-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.calendar {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #eee;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.calendar-grid .empty {
+  visibility: hidden;
+}
+
+.selected {
+  background-color: #9b1c2e;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.hour-list h3 {
+  margin-bottom: 1rem;
+}
+
+.hour-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hour-list li {
+  margin-bottom: 0.5rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.dropdown {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #9b1c2e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #7d1826;
+}
